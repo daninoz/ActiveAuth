@@ -1,6 +1,4 @@
-<?php
-
-namespace Daninoz\ActiveAuth;
+<?php namespace Daninoz\ActiveAuth;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Config;
@@ -8,28 +6,35 @@ use Illuminate\Support\Facades\Config;
 class ActiveAuth extends Auth
 {
     /**
-     * Constant representing an invalid password.
+     * Constant representing invalid credentials
      *
      * @var int
      */
     const INVALID_CREDENTIALS = 'active-auth::active-auth.credentials';
 
     /**
-     * Constant representing an inactive user
+     * Constant representing if the user is inactive
      *
      * @var int
      */
     const INACTIVE_USER = 'active-auth::active-auth.inactive';
 
     /**
-     * Constant representing a success login
+     * Constant representing a successful login
      *
      * @var int
      */
     const SUCCESS = 'active-auth::active_auth.success';
 
-    protected static $active = 'activo';
 
+    /**
+     * Attempt to authenticate an active user using the given credentials.
+     *
+     * @param array $credentials
+     * @param bool $onlyActive
+     * @param bool $remember
+     * @return string
+     */
     public static function activeAttempt(array $credentials = array(), $onlyActive = true, $remember = false) {
 
         $active_field = Config::get('active-auth::active-field');
