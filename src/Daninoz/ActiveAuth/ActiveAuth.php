@@ -3,7 +3,7 @@
 namespace Daninoz\ActiveAuth;
 
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Config
+use Illuminate\Support\Facades\Config;
 
 class ActiveAuth extends Auth
 {
