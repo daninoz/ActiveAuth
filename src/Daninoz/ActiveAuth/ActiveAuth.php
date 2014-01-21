@@ -3,6 +3,7 @@
 namespace Daninoz\ActiveAuth;
 
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Config
 
 class ActiveAuth extends Auth
 {
@@ -31,7 +32,7 @@ class ActiveAuth extends Auth
 
     public static function activeAttempt(array $credentials = array(), $onlyActive = true, $remember = false) {
 
-        $active_field = Config::get('active-auth::active_field');
+        $active_field = Config::get('active-auth::active-field');
 
         if (parent::once($credentials))
         {

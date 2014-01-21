@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'active_field' => 'active'
+    'active-field' => 'active'
 ];
