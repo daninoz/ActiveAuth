@@ -12,21 +12,21 @@ class ActiveAuth extends Auth
      *
      * @var int
      */
-    const INVALID_CREDENTIALS = 'active-auth.credentials';
+    const INVALID_CREDENTIALS = 'active-auth::active-auth.credentials';
 
     /**
      * Constant representing an inactive user
      *
      * @var int
      */
-    const INACTIVE_USER = 'active-auth.inactive';
+    const INACTIVE_USER = 'active-auth::active-auth.inactive';
 
     /**
      * Constant representing a success login
      *
      * @var int
      */
-    const SUCCESS = 'active_auth.success';
+    const SUCCESS = 'active-auth::active_auth.success';
 
     protected static $active = 'activo';
 
