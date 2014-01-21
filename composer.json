@@ -1,6 +1,8 @@
 {
     "name": "daninoz/active-auth",
     "description": "",
+    "keywords": ["laravel","auth"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Daniel Albornoz",
