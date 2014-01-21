@@ -7,25 +7,18 @@ use Illuminate\Support\Facades\Auth;
 class ActiveAuth extends Auth
 {
     /**
-     * Constant representing the user not found response.
-     *
-     * @var int
-     */
-    const INVALID_USER = 'active_auth.user';
-
-    /**
      * Constant representing an invalid password.
      *
      * @var int
      */
-    const INVALID_CREDENTIALS = 'active_auth.password';
+    const INVALID_CREDENTIALS = 'active-auth.credentials';
 
     /**
      * Constant representing an inactive user
      *
      * @var int
      */
-    const INACTIVE_USER = 'active_auth.token';
+    const INACTIVE_USER = 'active-auth.inactive';
 
     /**
      * Constant representing a success login
