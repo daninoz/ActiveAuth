@@ -1,0 +1,20 @@
+{
+    "name": "daninoz/active-auth",
+    "description": "",
+    "authors": [
+        {
+            "name": "Daniel Albornoz",
+            "email": "me@daninoz.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.1.x"
+    },
+    "autoload": {
+        "psr-0": {
+            "Daninoz\\ActiveAuth": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
