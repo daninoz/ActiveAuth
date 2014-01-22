@@ -63,3 +63,7 @@ switch ($response) {
 ## License
 
 Active Auth is free software distributed under the terms of the MIT license
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/daninoz/activeauth/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
