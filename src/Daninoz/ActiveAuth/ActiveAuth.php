@@ -35,7 +35,7 @@ class ActiveAuth extends Auth
      * @param bool $remember
      * @return string
      */
-    public static function activeAttempt(array $credentials = array(), $onlyActive = true, $remember = false) {
+    public static function activeAttempt(array $credentials = array(), $remember = false, $onlyActive = true) {
 
         $active_field = Config::get('active-auth::active-field');
 
